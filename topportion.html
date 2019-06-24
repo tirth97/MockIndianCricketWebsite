@@ -1,0 +1,137 @@
+<html>
+	<head>
+		<title>Top Portion</title>
+		<link rel="stylesheet" type="text/css" href="mainSidePanel.css">
+		<link rel="stylesheet" type="text/css" href="mainSidePanel.css">
+		<!-- Bootstrap Core CSS -->
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <!-- Custom CSS -->
+		<link rel="stylesheet" href="css/patros.css" >
+	</head>
+	<body  data-spy="scroll">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><img src="images/bcci.svg.png" alt="company logo"/></a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right custom-menu">
+						<li><a href="./index.html#home">Home</a></li>
+						<li><a href="./index.html#about">About</a></li>
+						
+						<li><a href="./index.html#meet-team">Team</a></li>
+						<li><a href="index.html#events">Events</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+	<div class="main">
+		<div class="chipMain">	
+				<a href="RGSharma.html" target="targetFrame" onclick="change(1)" class="name">
+				<div class="chip" id="1">
+				  <img src="./pics/rgs.jpg" alt="Person" width="96" height="96">
+				  Rohit Sharma
+				</div>
+				</a>
+				<a href="SDhawan.html" target="targetFrame" onclick="change(2)" class="name">
+				<div class="chip" id="2">
+				  <img src="./pics/sd.jpg" alt="Person" width="96" height="96">
+				Shikhar Dhawan
+				</div>
+				</a>
+				<a href="VKohli.html" class="name"  onclick="change(3)" target="targetFrame">
+				<div class="chip" id="3">
+				  <img src="./pics/vk.jpg" alt="Person" width="96" height="96">
+				  Virat Kohli
+				</div>
+				</a>
+				<a href="SRaina.html" target="targetFrame" onclick="change(4)" class="name">
+				<div class="chip" id="4">
+				  <img src="./pics/sr.jpg" alt="Person" width="96" height="96">
+				  Suresh Raina
+				</div>
+				</a>
+				
+				<a href="ARahane.html" class="name" onclick="change(5)" target="targetFrame">
+				<div class="chip" id="5">
+				  <img src="./pics/ar.jpg" alt="Person" width="96" height="96">
+				  Ajinkya Rahane
+				</div>
+				</a>
+				<a href="MSDhoni.html" class="name" onclick="change(6)" target="targetFrame">
+				<div class="chip" id="6">
+				  <img src="./pics/msd.jpg" alt="Person" width="96" height="96">
+				  MS Dhoni
+				</div>
+				</a>
+				<a href="RJadeja.html" target="targetFrame" onclick="change(7)"  class="name">
+				<div class="chip" id="7">
+				  <img src="./pics/rj.jpg" alt="Person" width="96" height="96">
+				Ravindra Jadeja
+				</div>
+				</a>
+				</a>
+				<a href="RAshwin.html" class="name" onclick="change(8)" target="targetFrame">
+				<div class="chip" id="8">
+				  <img src="./pics/ra.jpg" alt="Person" width="96" height="96">
+				  Ravi. Ashwin
+				</div>
+				</a>
+				<a href="BKumar.html" target="targetFrame" onclick="change(9)" class="name">
+				<div class="chip" id="9">
+				  <img src="./pics/bk.jpg" alt="Person" width="96" height="96">
+				Bhuvneshwar Kumar
+				</div>
+				</a>
+				<a href="UYadav.html" target="targetFrame" onclick="change(10)" class="name">
+				<div class="chip" id="10">
+				  <img src="./pics/uy.jpg" alt="Person" width="96" height="96">
+				  Umesh Yadav
+				</div>
+				</a>
+				<a href="MShami.html" target="targetFrame" onclick="change(11)" class="name">
+				<div class="chip" id="11">
+				  <img src="./pics/ms.jpg" alt="Person" width="96" height="96">
+				  Mohamd. Shami
+				</div>
+				</a>
+		</div>
+		<div class="frame">
+			<iframe src="" name="targetFrame" frameborder="0" style="width: 100%; height:100%;"></iframe>
+		</div>
+		
+	</div>
+	</body>
+	
+	<script>
+		var count=0;
+		var id=0;
+				
+				
+		function change(temp)
+		{
+			if(count==1)
+			{
+				count=0;
+				document.getElementById(""+id).className="chip";
+			}
+			document.getElementById(""+temp).className="active";
+			id=temp;
+			count=1;
+		}
+	</script>
+</html>

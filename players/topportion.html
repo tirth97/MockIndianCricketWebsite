@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>Top Portion</title>
+		<link rel="stylesheet" type="text/css" href="mainTop.css">
+	</head>
+	<body>
+	<div class="main">
+		<div class="chipMain">
+			
+				<a href="playerProfile.html" target="targetFrame" class="name" onclick="smile(event,'rohit')">
+				<div class="chip" id="rs">
+				  <img src="./pics/rs.jpg" alt="Person" width="96" height="96">
+				  Rohit Sharma
+				</div>
+				</a>
+				<a href="viratKohli.html" class="name" target="targetFrame">
+				<div class="chip" id="vk">
+				  <img src="./pics/vk.jpg" alt="Person" width="96" height="96">
+				  Virat Kohli
+				</div>
+				</a>
+				<a href="msDhoni.html" class="name" target="targetFrame">
+				<div class="chip" id="ms">
+				  <img src="./pics/ms.jpg" alt="Person" width="96" height="96">
+				  MS Dhoni
+				</div>
+				</a>
+				<a href="aRahane.html" class="name" target="targetFrame">
+				<div class="chip" id="ar">
+				  <img src="./pics/ar.jpg" alt="Person" width="96" height="96">
+				  Ajinkya Rahane
+				</div>
+				</a>
+				<a href="rAshwin.html" class="name" target="targetFrame">
+				<div class="chip">
+				  <img src="./pics/ra.jpg" alt="Person" width="96" height="96">
+				  Ravi. Ashwin
+				</div>
+			</a>
+		</div>
+		<div class="frame">
+			<iframe src="" name="targetFrame" frameborder="0" style="width: 100%; height:100%;float:right;"></iframe>
+		</div>
+		
+	</div>
+
+	<script type="text/javascript">
+		function smile(evt,name)
+		{
+			var chip = document.getElementsByClassName("chip");
+			for (i = 0; i < chip.length; i++) {
+        		chip[i].className = chip[i].className.replace(" active", "");
+
+        	/*document.getElementById(cityName).style.display = "block";*/
+    		document.getElementById(name).style
+		}
+	</script>
+
+	</body>
+</html>
